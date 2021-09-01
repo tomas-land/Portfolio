@@ -14,10 +14,12 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
         @include responsive_1000 {
-                
-           width: 80%;
+
+            width: 80%;
         }
+
         .title {
 
             width: 100%;
@@ -27,11 +29,19 @@
             // transform: translateX(-150px);
             text-shadow: 4px 2px #ff0000;
             font-family: 'Alfa Slab One', cursive;
+
+            @include responsive_500 {
+
+
+                font-size: 50px;
+                font-family: 'Alfa Slab One', cursive;
+                letter-spacing: 0px;
+
+            }
         }
-        @include responsive_1000 {
-                
-         
-         }
+
+
+
         .title2 {
 
             width: 100%;
@@ -39,11 +49,19 @@
             color: #202b38;
             font-size: 114px;
             font-family: 'Alfa Slab One', cursive;
-            -webkit-transform: scaleY(-2) skewX(-70deg);
-            -ms-transform: scaleY(-2) skewX(-70deg);
             transform: scaleY(-2) skewX(33deg) translateX(-26px)translateY(4px);
             letter-spacing: 5px;
 
+            @include responsive_500 {
+                width: 100%;
+                text-align: center;
+                color: #202b38;
+                font-size: 50px;
+                font-family: 'Alfa Slab One', cursive;
+                transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+                letter-spacing: 0px;
+
+            }
 
         }
 
@@ -57,9 +75,9 @@
         flex-wrap: wrap;
 
         @include responsive_1000 {
-                
+
             width: 100%;
-         }
+        }
 
         .red-line-box {
             padding-top: 8rem;
@@ -67,10 +85,12 @@
             height: 1px;
             justify-content: flex-end;
             width: 100%;
+
             @include responsive_1000 {
-                
+
                 display: none;
-             }
+            }
+
             .red-line {
                 width: 60%;
                 border-top: 1px solid red;
@@ -79,16 +99,24 @@
 
 
         p {
-            margin:  0 auto ;
+            margin: 0 auto;
             width: 80%;
             display: block;
             text-indent: 40px;
             color: #40e0d0;
             font-size: 30px;
             padding-bottom: 12rem;
+            font-family: $montserrat;
+line-height: 2;
             @include responsive_1500 {
-                
+
                 font-size: 27px;
+            }
+
+            @include responsive_500 {
+
+                font-size: 16px;
+                text-align: justify;
             }
         }
     }

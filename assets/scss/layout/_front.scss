@@ -10,7 +10,7 @@
         flex-wrap: wrap;
         align-items: center;
 
-        @include responsive_1500 {}
+       
 
 
         .title-holder {
@@ -33,6 +33,10 @@
                     margin-top: 8rem;
                     margin-left: 10rem;
 
+                }
+                @include responsive_500 {
+                    font-size: 30px;
+                    transform: translateX(-120px) translateY(20px);
                 }
 
             }
@@ -66,7 +70,7 @@
 
                     text-align: center;
                     font-size: 27vw;
-transform: translateY(20px);
+                    transform: translateY(20px);
                 }
             }
 

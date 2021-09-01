@@ -417,6 +417,12 @@ template {
 
 .header .social-media {
   padding: 1.5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header .social-media img {
@@ -577,6 +583,15 @@ template {
   #front .container .title-holder .title-up {
     margin-top: 8rem;
     margin-left: 10rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #front .container .title-holder .title-up {
+    font-size: 30px;
+    -webkit-transform: translateX(-120px) translateY(20px);
+        -ms-transform: translateX(-120px) translateY(20px);
+            transform: translateX(-120px) translateY(20px);
   }
 }
 
@@ -846,16 +861,38 @@ template {
   font-family: 'Alfa Slab One', cursive;
 }
 
+@media (max-width: 500px) {
+  #about .title-holder .title {
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 0px;
+  }
+}
+
 #about .title-holder .title2 {
   width: 100%;
   text-align: center;
   color: #202b38;
   font-size: 114px;
   font-family: 'Alfa Slab One', cursive;
-  -webkit-transform: scaleY(-2) skewX(-70deg);
-  -ms-transform: scaleY(-2) skewX(-70deg);
-  transform: scaleY(-2) skewX(33deg) translateX(-26px) translateY(4px);
+  -webkit-transform: scaleY(-2) skewX(33deg) translateX(-26px) translateY(4px);
+      -ms-transform: scaleY(-2) skewX(33deg) translateX(-26px) translateY(4px);
+          transform: scaleY(-2) skewX(33deg) translateX(-26px) translateY(4px);
   letter-spacing: 5px;
+}
+
+@media (max-width: 500px) {
+  #about .title-holder .title2 {
+    width: 100%;
+    text-align: center;
+    color: #202b38;
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    -webkit-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+        -ms-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+            transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+    letter-spacing: 0px;
+  }
 }
 
 #about .text {
@@ -904,11 +941,20 @@ template {
   color: #40e0d0;
   font-size: 30px;
   padding-bottom: 12rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
 }
 
 @media (max-width: 1500px) {
   #about .text p {
     font-size: 27px;
+  }
+}
+
+@media (max-width: 500px) {
+  #about .text p {
+    font-size: 16px;
+    text-align: justify;
   }
 }
 
