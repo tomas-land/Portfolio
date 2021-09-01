@@ -1,0 +1,142 @@
+#skills {
+
+    position: relative;
+    z-index: 2;
+    height: 60vh;
+    bottom: 50%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    @include responsive_500 {
+                
+       height: 80vh;
+      }
+    .title-holder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @include responsive_1000 {
+                
+            width: 80%;
+         }
+        .title {
+
+            width: 100%;
+            text-align: center;
+            color: #40e0d0;
+            font-size: 120px;
+            // transform: translateX(-150px);
+            text-shadow: 4px 2px #ff0000;
+            font-family: 'Alfa Slab One', cursive;
+        }
+
+        .title2 {
+
+            width: 100%;
+            text-align: center;
+            color: #202b38;
+            font-size: 114px;
+            font-family: 'Alfa Slab One', cursive;
+            -webkit-transform: scaleY(-2) skewX(-70deg);
+            -ms-transform: scaleY(-2) skewX(-70deg);
+            transform: scaleY(-2) skewX(33deg) translateX(-26px)translateY(4px);
+            letter-spacing: 5px;
+
+
+        }
+
+
+    }
+
+    .icons {
+        position: relative;
+        width: 50%;
+        @include responsive_1000 {
+                margin: auto;
+            width: 80%;
+         }
+        .red-line {
+            position: absolute;
+            border-top: 5px solid red;
+            top: 0;
+
+
+        }
+
+        .icon-holder {
+            margin-top: 10rem;
+            width: 80%;
+            height: 50%;
+
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            @include responsive_1500 {
+                width: 100%;
+            }
+            @include responsive_1000 {
+                
+                margin-top: 2rem;
+             }
+            img {
+
+                margin: 0 4rem;
+                width: 80px;
+                height: 80px;
+
+                &:first-of-type {
+                    border-radius: 10px
+                }
+                @include responsive_1000 {
+                
+                    margin-top: 3rem;
+                 }
+                @include responsive_500 {
+                
+                   margin: 2rem 2rem;
+                 }
+            }
+
+            .double-icon {
+                display: flex;
+                justify-content: center;
+                margin: 0 4rem;
+                width: 80px;
+                height: 80px;
+                position: relative;
+                @include responsive_500 {
+                
+                    margin: 0rem 2rem;
+                  }
+                .smile {
+                    position: absolute;
+
+                }
+            
+            }
+
+            .fade-out {
+                animation: fade-out 2s ease-in-out infinite alternate
+            }
+
+            @keyframes fade-out {
+                0% {
+                    opacity: 0
+                }
+
+                70% {
+                    opacity: 1
+                }
+
+                100% {
+                    opacity: 1
+                }
+            }
+        }
+    }
+}

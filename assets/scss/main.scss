@@ -1,0 +1,56 @@
+// UTILITIES
+@import 'utilities/_normalize.scss';
+@import 'utilities/_variables.scss';
+@import 'utilities/_mixins.scss';
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+// PAGES
+@import 'pages/_home.scss';
+
+
+// LAYOUT
+@import 'layout/_header.scss';
+@import 'layout/_front.scss';
+@import 'layout/_about.scss';
+@import 'layout/_skills.scss';
+@import 'layout/_my_work.scss';
+
+
+
+
+
+
+
+
+#background {
+
+    height: auto;
+    background-color: $primary;
+    position: relative;
+
+
+    .square {
+        position: absolute;
+        z-index: 1;
+        right: 60%;
+        background-color: $primary-dark;
+        width: 60%;
+        height: 100%;
+        transform: skew(-17deg);
+
+        @include responsive_1100 {
+
+            right: 80%;
+        }
+        @include responsive_1000 {
+            width: 40%;
+            right: 50%;
+            transform: skew(0deg);
+        }
+    }
+}

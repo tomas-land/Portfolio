@@ -1,0 +1,155 @@
+.slide-menu {
+    display: none;
+
+    @include responsive_800 {
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 30vh;
+        background-color: rgba(30, 40,51, 0.6%);
+        backdrop-filter: blur(10px);
+        right: 100%;
+        top: 10vh;
+        transition: 0.5s;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 0;
+
+        a {
+            list-style: none;
+            color: turquoise;
+            font-family: $montserrat;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 3px;
+            cursor: pointer;
+            width: 100%;
+
+        }
+    }
+}
+
+.slide-menu-active {
+    display: block;
+    top: 10vh;
+    right: 0%;
+
+}
+
+.header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+
+    .social-media {
+        padding: 1.5rem 3rem;
+
+        img {
+            margin-right: 0.5rem;
+            width: 40%;
+            cursor: pointer;
+        }
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+
+        @include responsive_800 {
+            display: block;
+            padding: 1.5rem 3rem;
+
+        }
+    }
+
+    .menu {
+        width: 45%;
+        margin: 0;
+        padding: 0;
+
+        @include responsive_1300 {
+            width: 55%;
+
+        }
+
+        @include responsive_900 {
+            width: 65%;
+
+        }
+
+        @include responsive_800 {
+            display: none;
+
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            margin-right: 4rem;
+            height: 100%;
+            align-items: center;
+
+            .menu-link {
+
+                width: 25%;
+                text-decoration: none;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                color: turquoise;
+                font-family: $montserrat;
+                text-align: center;
+                font-size: 18px;
+                letter-spacing: 3px;
+                cursor: pointer;
+
+                @include responsive_900 {
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    background-color: #2a3540;
+                }
+
+                &:last-of-type {
+                    border-bottom: 1px solid #d41010;
+
+
+
+                }
+
+            }
+        }
+    }
+
+}
+
+
+.glass-effect {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    @include responsive_800 {
+        background-color: rgba(30, 40,51, 0.6%);
+
+    }
+
+}

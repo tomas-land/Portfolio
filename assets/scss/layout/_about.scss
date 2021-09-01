@@ -1,0 +1,100 @@
+#about {
+    position: relative;
+    z-index: 2;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+
+    .title-holder {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @include responsive_1000 {
+                
+           width: 80%;
+        }
+        .title {
+
+            width: 100%;
+            text-align: center;
+            color: #40e0d0;
+            font-size: 120px;
+            // transform: translateX(-150px);
+            text-shadow: 4px 2px #ff0000;
+            font-family: 'Alfa Slab One', cursive;
+        }
+        @include responsive_1000 {
+                
+         
+         }
+        .title2 {
+
+            width: 100%;
+            text-align: center;
+            color: #202b38;
+            font-size: 114px;
+            font-family: 'Alfa Slab One', cursive;
+            -webkit-transform: scaleY(-2) skewX(-70deg);
+            -ms-transform: scaleY(-2) skewX(-70deg);
+            transform: scaleY(-2) skewX(33deg) translateX(-26px)translateY(4px);
+            letter-spacing: 5px;
+
+
+        }
+
+
+    }
+
+    .text {
+
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include responsive_1000 {
+                
+            width: 100%;
+         }
+
+        .red-line-box {
+            padding-top: 8rem;
+            display: flex;
+            height: 1px;
+            justify-content: flex-end;
+            width: 100%;
+            @include responsive_1000 {
+                
+                display: none;
+             }
+            .red-line {
+                width: 60%;
+                border-top: 1px solid red;
+            }
+        }
+
+
+        p {
+            margin:  0 auto ;
+            width: 80%;
+            display: block;
+            text-indent: 40px;
+            color: #40e0d0;
+            font-size: 30px;
+            padding-bottom: 12rem;
+            @include responsive_1500 {
+                
+                font-size: 27px;
+            }
+        }
+    }
+
+
+
+
+
+}
