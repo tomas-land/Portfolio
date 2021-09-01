@@ -1,12 +1,14 @@
 #my-work {
-    margin-top: 8rem;
+    padding-top: 8rem;
     position: relative;
     z-index: 2;
     height: auto;
     bottom: 50%;
     display: flex;
     flex-direction: column;
-
+    @include responsive_500 {
+        margin-top: 0;
+    }
 
     .title-holder {
         width: 50%;
@@ -28,9 +30,12 @@
             text-align: center;
             color: #40e0d0;
             font-size: 120px;
-            // transform: translateX(-150px);
             text-shadow: 4px 2px #ff0000;
             font-family: 'Alfa Slab One', cursive;
+
+            @include responsive_500 {
+                font-size: 50px;
+            }
         }
 
         .title2 {
@@ -44,7 +49,15 @@
             -ms-transform: scaleY(-2) skewX(-70deg);
             transform: scaleY(-2) skewX(33deg) translateX(-26px)translateY(4px);
             letter-spacing: 5px;
+            @include responsive_500 {
+                width: 100%;
+                text-align: center;
+                color: #202b38;
+                font-size: 50px;
+                transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+                letter-spacing: 0px;
 
+            }
 
         }
 
@@ -56,7 +69,9 @@
         margin: auto;
         height: auto;
         transform: translateY(-60px);
-
+        @include responsive_500 {
+            transform: translateY(0px);
+        }
         .card {
             height: auto;
             display: flex;
@@ -77,16 +92,26 @@
                 font-family: $montserrat;
                 font-size: 50px;
                 font-weight: 400;
+
                 @include responsive_1000 {
-                
-                   font-size: 40px;
-                 }
+
+                    font-size: 40px;
+                }
+                @include responsive_500 {
+                   width: 100%;
+                   font-size: 27px;
+                }
             }
 
             span {
 
                 color: turquoise;
                 font-size: 30px;
+                
+                @include responsive_500 {
+                    font-size: 23px;
+
+                }
 
             }
 
@@ -95,7 +120,10 @@
                 margin: auto;
                 height: auto;
                 border-radius: 10px;
-
+                @include responsive_500 {
+                    width: 100%;
+                 
+                 }
             }
 
             .card-features {
@@ -105,12 +133,20 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                @include responsive_500 {
+                    width: 90%;
 
+                }
                 li {
                     width: 100%;
                     font-size: 20px;
                     color: #248e83;
                     font-family: $montserrat;
+                    
+                    @include responsive_500 {
+                        font-size: 16px;
+
+                    }
                 }
 
                 .features {
@@ -128,7 +164,7 @@
                         width: 100%;
 
                     }
-
+                   
 
                 }
 
@@ -158,11 +194,15 @@
                 width: 75%;
                 margin: 2rem auto;
                 font-family: $montserrat;
-
+                @include responsive_500 {
+                    width: 90%;
+margin-bottom: 0;
+                }
                 ul {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: start;
+                  
 
                     li {
                         margin-bottom: 1rem;
@@ -177,6 +217,10 @@
                             width: 30%;
 
                         }
+                        @include responsive_500 {
+                            width: 50%;
+    
+                        }
                     }
                 }
             }
@@ -185,8 +229,12 @@
                 width: 70%;
                 margin: 2rem auto;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
+                @include responsive_500 {
+                    width: 90%;
 
+                }
                 a {
                     width: 25%;
                     padding: 1rem;
@@ -195,7 +243,12 @@
                     font-family: $montserrat;
                     border: 1px solid turquoise;
                     color: turquoise;
+                    @include responsive_500 {
+                        margin: auto;
+                        width: 80%;
+                        margin-bottom: 1rem;
 
+                    }
                     &:hover {
                         background-color: #19232f;
                     }

@@ -396,7 +396,6 @@ template {
 }
 
 .slide-menu-active {
-  display: block;
   top: 10vh;
   right: 0%;
 }
@@ -730,7 +729,7 @@ template {
   position: absolute;
   z-index: 999;
   right: 20%;
-  bottom: 10%;
+  bottom: 20%;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -740,7 +739,7 @@ template {
   position: absolute;
   z-index: 999;
   right: 20%;
-  bottom: 8.5%;
+  bottom: 18.5%;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -750,7 +749,7 @@ template {
   position: absolute;
   z-index: 999;
   right: 20%;
-  bottom: 7%;
+  bottom: 17%;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -760,7 +759,7 @@ template {
   position: absolute;
   z-index: 999;
   right: 20%;
-  bottom: 5.5%;
+  bottom: 15.5%;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -819,7 +818,7 @@ template {
 #about {
   position: relative;
   z-index: 2;
-  height: 80vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,6 +827,13 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+  #about {
+    padding-top: 6rem;
+    height: 100vh;
+  }
 }
 
 #about .title-holder {
@@ -940,7 +946,7 @@ template {
   text-indent: 40px;
   color: #40e0d0;
   font-size: 30px;
-  padding-bottom: 12rem;
+  padding-top: 4rem;
   font-family: "Montserrat", sans-serif;
   line-height: 2;
 }
@@ -953,6 +959,7 @@ template {
 
 @media (max-width: 500px) {
   #about .text p {
+    padding-bottom: 6rem;
     font-size: 16px;
     text-align: justify;
   }
@@ -961,7 +968,7 @@ template {
 #skills {
   position: relative;
   z-index: 2;
-  height: 60vh;
+  height: 100vh;
   bottom: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -975,7 +982,7 @@ template {
 
 @media (max-width: 500px) {
   #skills {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -1001,6 +1008,13 @@ template {
   }
 }
 
+@media (max-width: 500px) {
+  #skills .title-holder {
+    margin-top: 8rem;
+    width: 80%;
+  }
+}
+
 #skills .title-holder .title {
   width: 100%;
   text-align: center;
@@ -1008,6 +1022,12 @@ template {
   font-size: 120px;
   text-shadow: 4px 2px #ff0000;
   font-family: 'Alfa Slab One', cursive;
+}
+
+@media (max-width: 500px) {
+  #skills .title-holder .title {
+    font-size: 50px;
+  }
 }
 
 #skills .title-holder .title2 {
@@ -1022,9 +1042,32 @@ template {
   letter-spacing: 5px;
 }
 
+@media (max-width: 500px) {
+  #skills .title-holder .title2 {
+    width: 100%;
+    text-align: center;
+    color: #202b38;
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    -webkit-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+        -ms-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+            transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+    letter-spacing: 0px;
+  }
+}
+
 #skills .icons {
   position: relative;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1000px) {
@@ -1034,14 +1077,8 @@ template {
   }
 }
 
-#skills .icons .red-line {
-  position: absolute;
-  border-top: 5px solid red;
-  top: 0;
-}
-
 #skills .icons .icon-holder {
-  margin-top: 10rem;
+  margin-top: 17rem;
   width: 80%;
   height: 50%;
   display: -webkit-box;
@@ -1063,6 +1100,15 @@ template {
 @media (max-width: 1000px) {
   #skills .icons .icon-holder {
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #skills .icons .icon-holder {
+    margin-top: 0rem;
+    -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
 }
 
@@ -1141,7 +1187,7 @@ template {
 }
 
 #my-work {
-  margin-top: 8rem;
+  padding-top: 8rem;
   position: relative;
   z-index: 2;
   height: auto;
@@ -1153,6 +1199,12 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  #my-work {
+    margin-top: 0;
+  }
 }
 
 #my-work .title-holder {
@@ -1186,6 +1238,12 @@ template {
   font-family: 'Alfa Slab One', cursive;
 }
 
+@media (max-width: 500px) {
+  #my-work .title-holder .title {
+    font-size: 50px;
+  }
+}
+
 #my-work .title-holder .title2 {
   width: 100%;
   text-align: center;
@@ -1198,6 +1256,19 @@ template {
   letter-spacing: 5px;
 }
 
+@media (max-width: 500px) {
+  #my-work .title-holder .title2 {
+    width: 100%;
+    text-align: center;
+    color: #202b38;
+    font-size: 50px;
+    -webkit-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+        -ms-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+            transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+    letter-spacing: 0px;
+  }
+}
+
 #my-work .cards-holder {
   width: 80%;
   margin: auto;
@@ -1205,6 +1276,14 @@ template {
   -webkit-transform: translateY(-60px);
       -ms-transform: translateY(-60px);
           transform: translateY(-60px);
+}
+
+@media (max-width: 500px) {
+  #my-work .cards-holder {
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 #my-work .cards-holder .card {
@@ -1245,9 +1324,22 @@ template {
   }
 }
 
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-title {
+    width: 100%;
+    font-size: 27px;
+  }
+}
+
 #my-work .cards-holder .card span {
   color: turquoise;
   font-size: 30px;
+}
+
+@media (max-width: 500px) {
+  #my-work .cards-holder .card span {
+    font-size: 23px;
+  }
 }
 
 #my-work .cards-holder .card .card-slider {
@@ -1255,6 +1347,12 @@ template {
   margin: auto;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-slider {
+    width: 100%;
+  }
 }
 
 #my-work .cards-holder .card .card-features {
@@ -1271,11 +1369,23 @@ template {
           justify-content: space-between;
 }
 
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-features {
+    width: 90%;
+  }
+}
+
 #my-work .cards-holder .card .card-features li {
   width: 100%;
   font-size: 20px;
   color: #248e83;
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-features li {
+    font-size: 16px;
+  }
 }
 
 #my-work .cards-holder .card .card-features .features {
@@ -1324,6 +1434,13 @@ template {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-tech {
+    width: 90%;
+    margin-bottom: 0;
+  }
+}
+
 #my-work .cards-holder .card .card-tech ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1350,15 +1467,29 @@ template {
   }
 }
 
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-tech ul li {
+    width: 50%;
+  }
+}
+
 #my-work .cards-holder .card .card-buttons {
   width: 70%;
   margin: 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-buttons {
+    width: 90%;
+  }
 }
 
 #my-work .cards-holder .card .card-buttons a {
@@ -1369,6 +1500,14 @@ template {
   font-family: "Montserrat", sans-serif;
   border: 1px solid turquoise;
   color: turquoise;
+}
+
+@media (max-width: 500px) {
+  #my-work .cards-holder .card .card-buttons a {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
 }
 
 #my-work .cards-holder .card .card-buttons a:hover {
