@@ -149,6 +149,11 @@
                     transform: scaleY(-2) skewX(33deg) translateX(-132px) translateY(111px);
                     color: #202b38;
                 }
+                @include responsive_500 {
+                    font-size: 16vw;
+                    transform: scaleY(-2) skewX(33deg) translateX(-52px) translateY(62px);
+                                        color: #202b38;
+                }
             }
 
         }
