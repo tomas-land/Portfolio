@@ -130,6 +130,34 @@
                     width: 100%;
 
                 }
+                .slick-slide{
+                    @include responsive_500 {
+                        border-radius: 0;
+                    }
+                }
+                .slick-prev {
+                    @include responsive_500 {
+                        left: 10px;
+                    }
+                }
+
+                .slick-next {
+                    @include responsive_500 {
+                        right: 10px;
+                    }
+                }
+
+                .slick-prev:before {
+                    @include responsive_500 {
+                        font-size: 40px;
+                    }
+                }
+
+                .slick-next:before {
+                    @include responsive_500 {
+                        font-size: 40px;
+                    }
+                }
             }
 
             .card-features {
@@ -212,7 +240,12 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: start;
+                    @include responsive_500 {
+                        padding: 1rem 0 0 0;
+                        width: 90%;
+                        margin: auto;
 
+                    }
 
                     li {
                         margin-bottom: 1rem;
