@@ -431,7 +431,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .header .social-media a svg {
@@ -949,14 +949,13 @@ template {
 }
 
 #about .text .red-line-box {
-  padding-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  height: 35%;
   width: 100%;
 }
 
@@ -968,24 +967,25 @@ template {
 
 #about .text .red-line-box .red-line {
   width: 60%;
-  border-top: 1px solid red;
+  border-bottom: 1px solid red;
 }
 
 #about .text p {
-  margin: 0 auto;
+  margin: auto;
   width: 80%;
+  height: 80%;
   text-align: justify;
   text-indent: 60px;
   color: #40e0d0;
   font-size: 25px;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
   font-family: "Montserrat", sans-serif;
   line-height: 2;
 }
 
 @media (max-width: 1500px) {
   #about .text p {
-    font-size: 27px;
+    font-size: 22px;
   }
 }
 
@@ -1086,9 +1086,9 @@ template {
     color: #202b38;
     font-size: 50px;
     font-family: 'Alfa Slab One', cursive;
-    -webkit-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
-        -ms-transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
-            transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
+    -webkit-transform: scaleY(-2) skewX(33deg) translateX(-10px) translateY(0px);
+        -ms-transform: scaleY(-2) skewX(33deg) translateX(-10px) translateY(0px);
+            transform: scaleY(-2) skewX(33deg) translateX(-10px) translateY(0px);
     letter-spacing: 0px;
   }
 }
@@ -1370,6 +1370,7 @@ template {
 }
 
 #my-work .cards-holder .card span {
+  width: 100%;
   color: turquoise;
   font-size: 30px;
 }
@@ -1588,6 +1589,37 @@ template {
 
 #my-work .cards-holder .card .card-buttons a:hover {
   background-color: #19232f;
+}
+
+#my-work .cards-holder .card2 .card-features .features {
+  width: 100%;
+}
+
+#my-work .cards-holder .card2 .card-features .features ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#my-work .cards-holder .card2 .card-features .features ul li {
+  width: 23%;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1300px) {
+  #my-work .cards-holder .card2 .card-features .features ul li {
+    width: 45%;
+  }
+}
+
+#my-work .cards-holder .card2 .card-features .card-tech {
+  width: 100%;
 }
 
 #background {

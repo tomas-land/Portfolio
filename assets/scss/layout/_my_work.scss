@@ -110,7 +110,7 @@
             }
 
             span {
-
+                width: 100%;
                 color: turquoise;
                 font-size: 30px;
 
@@ -131,11 +131,13 @@
                     width: 100%;
 
                 }
-                .slick-slide{
+
+                .slick-slide {
                     @include responsive_500 {
                         border-radius: 0;
                     }
                 }
+
                 .slick-prev {
                     @include responsive_500 {
                         left: 10px;
@@ -241,6 +243,7 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: start;
+
                     @include responsive_500 {
                         padding: 1rem 0 0 0;
                         width: 90%;
@@ -308,41 +311,40 @@
 
         }
 
+        .card2 {
+            .card-features {
+                .features {
+                    width: 100%;
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        li {
+                            width: 23%;
+                            margin-right: 1rem;
+
+                            @include responsive_1300 {
+
+                                width: 45%;
 
 
-        //    .card-stats {
-        //      grid-area: stats; 
-        //      display: grid;
-        //      grid-template-columns: 1fr 1fr 1fr;
-        //      grid-template-rows: 1fr;
-        //      border-bottom-left-radius: 15px;
-        //      border-bottom-right-radius: 15px;
-        //      background: rgb(255, 7, 110);
-        //    }
-        //    .card-stats .stat {
-        //      padding:10px;
-        //      display: flex;
-        //      align-items: center;
-        //      justify-content: center;
-        //      flex-direction: column;
-        //      color: white;
-        //    }
-        //    .card-stats .border {
-        //      border-left: 1px solid rgb(172, 26, 87);
-        //      border-right: 1px solid rgb(172, 26, 87);
-        //    }
-        //    .card-stats .value{
-        //      font-size:22px;
-        //      font-weight: 500;
-        //    }
-        //    .card-stats .value sup{
-        //      font-size:12px;
-        //    }
-        //    .card-stats .type{
-        //      font-size:11px;
-        //      font-weight: 300;
-        //      text-transform: uppercase;
-        //    }
+                            }
+                        }
+                    }
+
+                }
+                .card-tech{
+                    width: 100%;
+                }
+            }
+        }
+
+
+
+
 
 
     }
