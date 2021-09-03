@@ -357,7 +357,7 @@ template {
 
 @media (max-width: 800px) {
   .slide-menu {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 9999;
     width: 100%;
@@ -396,8 +396,6 @@ template {
 }
 
 .slide-menu-active {
-  display: block;
-  top: 10vh;
   right: 0%;
 }
 
@@ -434,6 +432,10 @@ template {
           align-items: center;
   height: 100%;
   margin-right: 1rem;
+}
+
+.header .social-media a svg {
+  width: 80%;
 }
 
 .header .social-media a:hover .svg {
