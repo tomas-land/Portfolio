@@ -2,12 +2,12 @@
     display: none;
 
     @include responsive_800 {
-        display: block;
+        display: none;
         position: fixed;
         z-index: 9999;
         width: 100%;
         height: 35vh;
-        background-color:#2d3c4c59;
+        background-color: #2d3c4c59;
         backdrop-filter: blur(10px);
         right: 100%;
         top: 10vh;
@@ -36,7 +36,7 @@
 }
 
 .slide-menu-active {
-   
+display: block;
     top: 10vh;
     right: 0%;
 
@@ -52,15 +52,21 @@
     justify-content: space-between;
 
     .social-media {
-        padding: 1.5rem 3rem;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
 
-        img {
-            margin-right: 0.5rem;
-            width: 40%;
-            cursor: pointer;
+        a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin-right: 1rem;
         }
+
+        a:hover .svg{
+            fill: turquoise;
+        }
+
     }
 
     .hamburger {
@@ -151,7 +157,7 @@
     top: 0;
 
     @include responsive_800 {
-        background-color:#2d3c4c59;
+        background-color: #2d3c4c59;
 
 
     }

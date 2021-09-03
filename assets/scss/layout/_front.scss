@@ -10,7 +10,7 @@
         flex-wrap: wrap;
         align-items: center;
 
-       
+
 
 
         .title-holder {
@@ -34,6 +34,7 @@
                     margin-left: 10rem;
 
                 }
+
                 @include responsive_500 {
                     font-size: 30px;
                     transform: translateX(-120px) translateY(20px);
@@ -149,10 +150,16 @@
                     transform: scaleY(-2) skewX(33deg) translateX(-132px) translateY(111px);
                     color: #202b38;
                 }
+
                 @include responsive_500 {
                     font-size: 16vw;
-                    transform: scaleY(-2) skewX(33deg) translateX(-52px) translateY(62px);
-                                        color: #202b38;
+                    transform: scaleY(-2) skewX(33deg) translateX(-62px) translateY(76px);
+                    color: #202b38;
+                }
+                @include responsive_400 {
+                    font-size: 16vw;
+                    transform: scaleY(-2) skewX(33deg) translateX(-48px) translateY(57px);
+                    color: #202b38;
                 }
             }
 
