@@ -1621,6 +1621,12 @@ template {
   width: 100%;
 }
 
+#contacts .container svg {
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
 #contacts .container .contacts-icons {
   background-color: #1a232d;
   display: -webkit-box;
@@ -1649,16 +1655,20 @@ template {
   }
 }
 
-#contacts .container .contacts-icons .icon svg {
-  width: 60px;
-  height: 60px;
+#contacts .container .contacts-icons .phone-icon svg {
+  width: 88px;
 }
 
-@media (max-width: 500px) {
-  #contacts .container .contacts-icons .icon svg {
-    width: 40px;
-    height: 40px;
-  }
+#contacts .container .contacts-icons .email-icon svg {
+  width: 112px;
+}
+
+#contacts .container .contacts-icons .linkedin-icon svg {
+  width: 75px;
+}
+
+#contacts .container .contacts-icons .github-icon svg {
+  width: 80px;
 }
 
 #contacts .hidden-bar {
@@ -1730,6 +1740,12 @@ template {
   color: #0c6b61;
 }
 
+@media (max-width: 500px) {
+  #contacts .bottom {
+    font-size: 10px;
+  }
+}
+
 #background {
   height: auto;
   background-color: #1e2833;
@@ -1776,5 +1792,18 @@ template {
         -ms-transform: skew(-5deg);
             transform: skew(-5deg);
   }
+}
+
+button,
+textarea,
+input,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /*# sourceMappingURL=main.css.map */
