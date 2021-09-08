@@ -70,10 +70,8 @@
         width: 80%;
         margin: auto;
         height: auto;
-        transform: translateY(-60px);
 
-        @include responsive_500 {
-            transform: translateY(40px);
+        @include responsive_500 {    
             width: 90%;
         }
 
@@ -274,7 +272,7 @@
             }
 
             .card-buttons {
-                width: 70%;
+                width: 75%;
                 margin: 2rem auto;
                 display: flex;
                 flex-wrap: wrap;
@@ -336,7 +334,12 @@
                     }
 
                 }
-                .card-tech{
+
+                .card-tech {
+                    width: 100%;
+                }
+
+                .card-buttons {
                     width: 100%;
                 }
             }

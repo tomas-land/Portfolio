@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 // PAGES
 @import 'pages/_home.scss';
 
@@ -19,7 +20,7 @@
 @import 'layout/_about.scss';
 @import 'layout/_skills.scss';
 @import 'layout/_my_work.scss';
-
+@import 'layout/_contacts.scss';
 
 
 
@@ -49,14 +50,20 @@
         height: 100%;
         transform: skew(-17deg);
 
-        @include responsive_1100 {
-
-            right: 80%;
+        @include responsive_1500 {
+            width: 60%;
+            right: 60%;
+            transform: skew(-10deg);
         }
         @include responsive_1000 {
-            width: 40%;
-            right: 50%;
-            transform: skew(0deg);
+            width: 60%;
+            right: 60%;
+            transform: skew(-5deg);
+        }
+        @include responsive_500 {
+            width: 60%;
+            right: 65%;
+            transform: skew(-5deg);
         }
     }
 }

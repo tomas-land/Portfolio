@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -420,22 +421,16 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 .header .social-media a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  margin-right: 0.5rem;
+  height: 50%;
+  margin-right: 1.5rem;
 }
 
 .header .social-media a svg {
-  width: 80%;
+  width: 40px;
 }
 
 .header .social-media a:hover .svg {
@@ -1310,16 +1305,10 @@ template {
   width: 80%;
   margin: auto;
   height: auto;
-  -webkit-transform: translateY(-60px);
-      -ms-transform: translateY(-60px);
-          transform: translateY(-60px);
 }
 
 @media (max-width: 500px) {
   #my-work .cards-holder {
-    -webkit-transform: translateY(40px);
-        -ms-transform: translateY(40px);
-            transform: translateY(40px);
     width: 90%;
   }
 }
@@ -1551,7 +1540,7 @@ template {
 }
 
 #my-work .cards-holder .card .card-buttons {
-  width: 70%;
+  width: 75%;
   margin: 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1622,6 +1611,115 @@ template {
   width: 100%;
 }
 
+#my-work .cards-holder .card2 .card-features .card-buttons {
+  width: 100%;
+}
+
+#contacts .container .contacts-icons {
+  background-color: #1a232d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contacts .container .contacts-icons .icon {
+  padding: 5rem 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  #contacts .container .contacts-icons .icon {
+    padding: 5rem 1rem;
+  }
+}
+
+#contacts .container .contacts-icons .icon svg {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 500px) {
+  #contacts .container .contacts-icons .icon svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#contacts .hidden-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  background-color: #1a232d;
+}
+
+#contacts .hidden-bar .hidden-phone {
+  display: none;
+}
+
+#contacts .hidden-bar .hidden-phone-active {
+  display: block;
+  color: #1a232d;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  background-color: #0c6b61;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0.5rem 2rem 0.5rem 1.5rem;
+}
+
+@media (max-width: 500px) {
+  #contacts .hidden-bar .hidden-phone-active {
+    font-size: 25px;
+  }
+}
+
+#contacts .hidden-bar .hidden-email {
+  display: none;
+}
+
+#contacts .hidden-bar .hidden-email-active {
+  display: block;
+  color: #1a232d;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  background-color: #0c6b61;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 500px) {
+  #contacts .hidden-bar .hidden-email-active {
+    font-size: 20px;
+  }
+}
+
+#contacts .bottom {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding: 3rem 0 1rem;
+  background-color: #1a232d;
+  color: #0c6b61;
+}
+
 #background {
   height: auto;
   background-color: #1e2833;
@@ -1640,19 +1738,33 @@ template {
           transform: skew(-17deg);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1500px) {
   #background .square {
-    right: 80%;
+    width: 60%;
+    right: 60%;
+    -webkit-transform: skew(-10deg);
+        -ms-transform: skew(-10deg);
+            transform: skew(-10deg);
   }
 }
 
 @media (max-width: 1000px) {
   #background .square {
-    width: 40%;
-    right: 50%;
-    -webkit-transform: skew(0deg);
-        -ms-transform: skew(0deg);
-            transform: skew(0deg);
+    width: 60%;
+    right: 60%;
+    -webkit-transform: skew(-5deg);
+        -ms-transform: skew(-5deg);
+            transform: skew(-5deg);
+  }
+}
+
+@media (max-width: 500px) {
+  #background .square {
+    width: 60%;
+    right: 65%;
+    -webkit-transform: skew(-5deg);
+        -ms-transform: skew(-5deg);
+            transform: skew(-5deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
