@@ -20,15 +20,12 @@
                     fill: turquoise;
                 }
 
-                @include responsive_500 {
+                @include responsive_700 {
                     padding: 5rem 1rem;
                 }
 
 
-                // @include responsive_500 {
-                //     width: 40px;
-                //     height: 40px;
-                // }
+            
 
 
             }
@@ -36,24 +33,41 @@
             .phone-icon {
                 svg {
                     width: 88px;
+                    @include responsive_700 {
+                        width: 52px;
+                    }
                 }
             }
 
             .email-icon {
                 svg {
                     width: 112px;
+                    @include responsive_700 {
+                        width: 66px;
+                    }
                 }
             }
 
             .linkedin-icon {
+                padding-right: 2.5rem;
+                @include responsive_700 {
+                    padding-right: 1.5rem;
+                }
                 svg {
                     width: 75px;
+                    @include responsive_700 {
+                        width: 45px;
+                    }
                 }
+               
             }
 
             .github-icon {
                 svg {
                     width: 80px;
+                    @include responsive_700 {
+                        width: 50px;
+                    }
                 }
             }
         }

@@ -1649,7 +1649,7 @@ template {
   fill: turquoise;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   #contacts .container .contacts-icons .icon {
     padding: 5rem 1rem;
   }
@@ -1659,16 +1659,50 @@ template {
   width: 88px;
 }
 
+@media (max-width: 700px) {
+  #contacts .container .contacts-icons .phone-icon svg {
+    width: 52px;
+  }
+}
+
 #contacts .container .contacts-icons .email-icon svg {
   width: 112px;
+}
+
+@media (max-width: 700px) {
+  #contacts .container .contacts-icons .email-icon svg {
+    width: 66px;
+  }
+}
+
+#contacts .container .contacts-icons .linkedin-icon {
+  padding-right: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  #contacts .container .contacts-icons .linkedin-icon {
+    padding-right: 1.5rem;
+  }
 }
 
 #contacts .container .contacts-icons .linkedin-icon svg {
   width: 75px;
 }
 
+@media (max-width: 700px) {
+  #contacts .container .contacts-icons .linkedin-icon svg {
+    width: 45px;
+  }
+}
+
 #contacts .container .contacts-icons .github-icon svg {
   width: 80px;
+}
+
+@media (max-width: 700px) {
+  #contacts .container .contacts-icons .github-icon svg {
+    width: 50px;
+  }
 }
 
 #contacts .hidden-bar {
