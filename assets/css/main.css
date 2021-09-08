@@ -424,13 +424,19 @@ template {
   margin-left: 3rem;
 }
 
+@media (max-width: 500px) {
+  .header .social-media {
+    margin-left: 1rem;
+  }
+}
+
 .header .social-media a {
   height: 50%;
   margin-right: 1.5rem;
 }
 
 .header .social-media a svg {
-  width: 40px;
+  width: 35px;
 }
 
 .header .social-media a:hover .svg {
@@ -1631,6 +1637,10 @@ template {
 #contacts .container .contacts-icons .icon {
   padding: 5rem 2rem;
   cursor: pointer;
+}
+
+#contacts .container .contacts-icons .icon:hover path {
+  fill: turquoise;
 }
 
 @media (max-width: 500px) {

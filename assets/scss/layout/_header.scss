@@ -55,7 +55,9 @@
         display: flex;
         align-items: center;
         margin-left: 3rem;
-
+        @include responsive_500 {
+            margin-left: 1rem;
+        }
         a {
 
             height: 50%;
@@ -63,7 +65,7 @@
 
             svg {
 
-                width: 40px;
+                width: 35px;
 
             }
         }
