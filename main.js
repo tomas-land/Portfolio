@@ -35,14 +35,7 @@ phone_icon.addEventListener('click', (e) => {
     void phone_icon.offsetWidth; // trigger reflow
     phone_icon.classList.add('tada'); // start animation
     hidden_phone.classList.add('fadeInLeft');
-    // hidden_phone.classList.toggle('fadeOutRight');
-    // if (hidden_phone.classList.contains('fadeInLeft')) {
-        // hidden_phone.classList.remove('fadeInLeft');
-        hidden_phone.classList.toggle('fadeOutRight');
-       
-    // } else{
-    //     hidden_phone.classList.add('fadeInLeft');
-    // }
+  
 
 
 })
