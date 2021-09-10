@@ -1632,10 +1632,14 @@ template {
   width: 100%;
 }
 
-#contacts .container svg {
+#contacts svg {
   -webkit-transform: translateY(10px);
       -ms-transform: translateY(10px);
           transform: translateY(10px);
+}
+
+#contacts .container {
+  background-color: #1a232d;
 }
 
 #contacts .container .contacts-icons {
@@ -1652,7 +1656,7 @@ template {
 }
 
 #contacts .container .contacts-icons .icon {
-  padding: 5rem 2rem;
+  padding: 1rem 2rem 4rem;
   cursor: pointer;
 }
 
@@ -1780,7 +1784,7 @@ template {
   font-size: 20px;
   font-family: 'Nunito', sans-serif;
   text-align: center;
-  padding: 3rem 0 1rem;
+  padding: 5rem 0 1rem;
   background-color: #1a232d;
   color: #0c6b61;
 }

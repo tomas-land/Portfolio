@@ -1,11 +1,11 @@
 #contacts {
 
-
-    .container {
-        
-        svg {
+ svg {
             transform: translateY(10px);
         }
+    .container {
+        background-color: #1a232d;
+       
 
         .contacts-icons {
             background-color: #1a232d;
@@ -14,7 +14,7 @@
             align-items: center;
 
             .icon {
-                padding: 5rem 2rem;
+                padding: 1rem 2rem 4rem;
                 cursor: pointer;
 
                 &:hover path {
@@ -131,7 +131,7 @@
         font-size: 20px;
         font-family: 'Nunito', sans-serif;
         text-align: center;
-        padding: 3rem 0 1rem;
+        padding: 5rem 0 1rem;
         background-color: #1a232d;
         color: #0c6b61;
 
