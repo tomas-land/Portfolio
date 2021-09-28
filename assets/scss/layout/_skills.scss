@@ -1,20 +1,14 @@
 #skills {
-
     position: relative;
     z-index: 2;
     height: 100vh;
     bottom: 50%;
-
-
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-
     @include responsive_500 {
-
         height: 100vh;
     }
-
     .title-holder {
         width: 50%;
         margin: auto;
@@ -22,19 +16,14 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-
         @include responsive_1000 {
-
             width: 80%;
         }
-
         @include responsive_500 {
             margin-top: 8rem;
             width: 80%;
         }
-
         .title {
-
             width: 100%;
             text-align: center;
             color: #40e0d0;
@@ -42,14 +31,11 @@
             // transform: translateX(-150px);
             text-shadow: 4px 2px #ff0000;
             font-family: 'Alfa Slab One', cursive;
-
             @include responsive_500 {
                 font-size: 50px;
             }
         }
-
         .title2 {
-
             width: 100%;
             text-align: center;
             color: #202b38;
@@ -59,7 +45,6 @@
             -ms-transform: scaleY(-2) skewX(-70deg);
             transform: scaleY(-2) skewX(33deg) translateX(-26px)translateY(4px);
             letter-spacing: 5px;
-
             @include responsive_500 {
                 width: 100%;
                 text-align: center;
@@ -68,76 +53,52 @@
                 font-family: 'Alfa Slab One', cursive;
                 transform: scaleY(-2) skewX(33deg) translateX(-10px) translateY(0px);
                 letter-spacing: 0px;
-
             }
-
-
         }
-
-
     }
-
     .icons {
         position: relative;
         width: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-
         @include responsive_1000 {
             margin: auto;
             width: 80%;
         }
-
       
-
-
         
-
         .icon-holder {
             margin-top: 9rem;
             width: 80%;
             height: 50%;
-
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-
             @include responsive_1500 {
                 width: 100%;
             }
-
             @include responsive_1000 {
-
                 margin-top: 2rem;
             }
             @include responsive_500 {
-
                 margin-top: 0rem;
                 transform: translateY(-50px);
             }
-
             img {
-
                 margin: 0 4rem;
                 width: 80px;
                 height: 80px;
-
                 &:first-of-type {
                     border-radius: 10px
                 }
-
                 @include responsive_1000 {
-
                     margin-top: 3rem;
                 }
-
                 @include responsive_500 {
-
                     margin: 2rem 2rem;
                 }
             }
-
             .double-icon {
                 display: flex;
                 justify-content: center;
@@ -145,32 +106,23 @@ align-items: center;
                 width: 80px;
                 height: 80px;
                 position: relative;
-
                 @include responsive_500 {
-
                     margin: 0rem 2rem;
                 }
-
                 .smile {
                     position: absolute;
-
                 }
-
             }
-
             .fade-out {
                 animation: fade-out 2s ease-in-out infinite alternate
             }
-
             @keyframes fade-out {
                 0% {
                     opacity: 0
                 }
-
                 70% {
                     opacity: 1
                 }
-
                 100% {
                     opacity: 1
                 }

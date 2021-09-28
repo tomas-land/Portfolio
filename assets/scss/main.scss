@@ -2,7 +2,6 @@
 @import 'utilities/_normalize.scss';
 @import 'utilities/_variables.scss';
 @import 'utilities/_mixins.scss';
-
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
@@ -11,10 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 // PAGES
-@import 'pages/_home.scss';
 @import 'pages/_coming-soon.scss';
-
-
 // LAYOUT
 @import 'layout/_header.scss';
 @import 'layout/_front.scss';
@@ -22,19 +18,11 @@
 @import 'layout/_skills.scss';
 @import 'layout/_my_work.scss';
 @import 'layout/_contacts.scss';
-
 @import 'components/_animations.scss';
-
-
-
-
 #background {
-
     height: auto;
     background-color: $primary;
     position: relative;
-
-
     .square {
         position: absolute;
         z-index: 1;
@@ -43,7 +31,6 @@
         width: 60%;
         height: 100%;
         transform: skew(-17deg);
-
         @include responsive_1500 {
             width: 60%;
             right: 60%;
@@ -61,7 +48,6 @@
         }
     }
 }
-
 // remove blue highlihts after click
 button,
 textarea,
@@ -76,10 +62,7 @@ a{
  -moz-user-select: none;
  -ms-user-select: none;
   user-select: none;
-
 }
-
-
 .coming-soon{
     background-color: #1e2833;
     width: 100vw;

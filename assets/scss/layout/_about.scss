@@ -5,13 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-
     @include responsive_500 {
         padding-top: 6rem;
         height: 100vh;
-
     }
-
     .title-holder {
         width: 50%;
         margin: auto;
@@ -19,15 +16,10 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-
         @include responsive_1000 {
-
             width: 80%;
         }
-
-
         .title {
-
             width: 100%;
             text-align: center;
             color: #40e0d0;
@@ -35,21 +27,13 @@
             // transform: translateX(-150px);
             text-shadow: 4px 2px #ff0000;
             font-family: 'Alfa Slab One', cursive;
-
             @include responsive_500 {
-
-
                 font-size: 50px;
                 font-family: 'Alfa Slab One', cursive;
                 letter-spacing: 0px;
-
             }
         }
-
-
-
         .title2 {
-
             width: 100%;
             text-align: center;
             color: #202b38;
@@ -57,7 +41,6 @@
             font-family: 'Alfa Slab One', cursive;
             transform: scaleY(-2) skewX(33deg) translateX(-26px)translateY(4px);
             letter-spacing: 5px;
-
             @include responsive_500 {
                 width: 100%;
                 text-align: center;
@@ -66,43 +49,29 @@
                 font-family: 'Alfa Slab One', cursive;
                 transform: scaleY(-2) skewX(33deg) translateX(-12px) translateY(1px);
                 letter-spacing: 0px;
-
             }
-
         }
-
-
     }
-
     .text {
-
         width: 50%;
         display: flex;
         flex-wrap: wrap;
-
         @include responsive_1000 {
-
             width: 100%;
         }
-
         .red-line-box {
             display: flex;
             justify-content: flex-end;
             height: 35%;
-
             width: 100%;
-
             @include responsive_1000 {
                 display: none;
             }
-
             .red-line {
-
                 width: 60%;
                 border-bottom: 1px solid red;
             }
         }
-
         p {
             margin: auto;
             width: 80%;
@@ -114,32 +83,18 @@
             padding-bottom: 0rem;
             font-family: $montserrat;
             line-height: 2;
-
             @include responsive_1500 {
-
                 font-size: 22px;
             }
-
-            // @include responsive_1300 {
-            //     padding-top: 5rem;
-            //     font-size: 22px;
-            // }
-
             @include responsive_500 {
                 padding-bottom: 6rem;
                 font-size: 16px;
                 text-align: justify;
             }
-
             a {
                 text-decoration: none;
                 color: red;
             }
         }
     }
-
-
-
-
-
 }
