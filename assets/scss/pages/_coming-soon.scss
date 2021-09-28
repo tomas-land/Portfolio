@@ -29,11 +29,12 @@ font-size: 3rem;
       transform: translate(-30%, 0);
     }
     50% {
-      text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
     }
     100% {
       transform: translate(30%, 0);
     }
+  
   }
   
   .words span:nth-child(2) {
