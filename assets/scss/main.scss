@@ -12,6 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 // PAGES
 @import 'pages/_home.scss';
+@import 'pages/_coming-soon.scss';
 
 
 // LAYOUT
@@ -78,3 +79,11 @@ a{
 
 }
 
+
+.coming-soon{
+    background-color: #1e2833;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    }
