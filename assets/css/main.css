@@ -971,7 +971,7 @@ template {
 
 @media (max-width: 500px) {
   #about {
-    margin-top: 8rem;
+    padding-top: 8rem;
     height: 100vh;
   }
 }
