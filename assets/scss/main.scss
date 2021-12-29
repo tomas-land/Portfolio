@@ -26,25 +26,25 @@
     .square {
         position: absolute;
         z-index: 1;
-        right: 60%;
+        right: 90%;
         background-color: $primary-dark;
-        width: 60%;
+        width: 50%;
         height: 100%;
-        transform: skew(-17deg);
+        transform: skew(-16deg);
         @include responsive_1500 {
             width: 60%;
-            right: 60%;
+            right: 80%;
             transform: skew(-10deg);
         }
         @include responsive_1000 {
-            width: 60%;
-            right: 60%;
+            width: 70%;
+            right: 80%;
             transform: skew(-5deg);
         }
         @include responsive_500 {
-            width: 60%;
-            right: 65%;
-            transform: skew(-5deg);
+            width: 50%;
+            right: 85%;
+            transform: skew(-4deg);
         }
     }
 }

@@ -2028,19 +2028,19 @@ template {
 #background .square {
   position: absolute;
   z-index: 1;
-  right: 60%;
+  right: 90%;
   background-color: #1a232d;
-  width: 60%;
+  width: 50%;
   height: 100%;
-  -webkit-transform: skew(-17deg);
-      -ms-transform: skew(-17deg);
-          transform: skew(-17deg);
+  -webkit-transform: skew(-16deg);
+      -ms-transform: skew(-16deg);
+          transform: skew(-16deg);
 }
 
 @media (max-width: 1500px) {
   #background .square {
     width: 60%;
-    right: 60%;
+    right: 80%;
     -webkit-transform: skew(-10deg);
         -ms-transform: skew(-10deg);
             transform: skew(-10deg);
@@ -2049,8 +2049,8 @@ template {
 
 @media (max-width: 1000px) {
   #background .square {
-    width: 60%;
-    right: 60%;
+    width: 70%;
+    right: 80%;
     -webkit-transform: skew(-5deg);
         -ms-transform: skew(-5deg);
             transform: skew(-5deg);
@@ -2059,11 +2059,11 @@ template {
 
 @media (max-width: 500px) {
   #background .square {
-    width: 60%;
-    right: 65%;
-    -webkit-transform: skew(-5deg);
-        -ms-transform: skew(-5deg);
-            transform: skew(-5deg);
+    width: 50%;
+    right: 85%;
+    -webkit-transform: skew(-4deg);
+        -ms-transform: skew(-4deg);
+            transform: skew(-4deg);
   }
 }
 
